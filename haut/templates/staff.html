@@ -1,0 +1,46 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+{{block.super}}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Staff</title>
+  
+
+
+</head>
+
+<body>
+<div class="container" >
+    <div class="row" >
+    <center><h1> Saint Joseph staff</h1></center>
+    
+      {% for staffo in staffs %}
+      <div class="column">  
+        <div class="card">                 
+                                  <img src="{{staffo.image.url}}" style="width:100%">
+                                  <h2><strong>{{staffo.name}}</strong></h2> <br>
+                                  <p class="title">{{staffo.post}}</p>
+                                  <p>{{staffo.title}}</p><br>
+                                  <p>{{staffo.email}}</p>
+                                  <p><button class="button">contact</button></p>
+                                </div>
+                  
+                                
+                              </div> 
+                        {% endfor %}
+    
+ 
+
+</div>
+</div>
+</body>
+
+</html>
+{% endblock%}

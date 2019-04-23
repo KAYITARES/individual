@@ -1,0 +1,15 @@
+{%extends 'base.html'%} 
+{% load bootstrap3 %}
+<!-- Some content here-->
+
+<!-- Looping through news end   -->
+<div class="container-fluid">
+
+  <form  action="{%url 'registration'%}" method="post">
+    {%csrf_token%}
+
+    {% bootstrap_form form layout='inline' %}
+    <input type="submit" value="Register">
+  </form>
+
+</div>

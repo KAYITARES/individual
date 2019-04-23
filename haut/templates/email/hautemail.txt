@@ -1,0 +1,2 @@
+Hello {{name}}
+Congratulation now we have been registered in Saint Joseph University, you will get more info soon

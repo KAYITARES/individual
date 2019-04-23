@@ -1,7 +1,4 @@
-h1
-{
-  color: green;
-}
+
 a{
   color:black;
   margin-right:1%;
@@ -11,13 +8,137 @@ a{
   background-color: white;
   background-repeat: no-repeat;
   /* background-position: right top; */
-  padding:3%;
+  padding:2.3%;
   
 }
 h5{
   font-style: bold;
 }
 #home{
-  background-image:url("https://images.pexels.com/photos/1181622/pexels-photo-1181622.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
-  width:100%;
+  margin-top:-2%;
+  
 }
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:white;
+}
+
+.load{
+  animation: slide 10s;
+}
+.slider{
+background-repeat: no-repeat;
+background-position:center;
+background-size:cover;
+width:100%;
+height:450px;
+animation: slide 20s infinite;
+}
+
+@keyframes slide{
+  0%{
+    background-image:url("https://images.pexels.com/photos/1181622/pexels-photo-1181622.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  }
+  50%{
+    background-image:url("https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  }
+  100%{
+    background-image:url("https://images.pexels.com/photos/356086/pexels-photo-356086.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  }
+
+
+}
+h1{
+  color:rgb(88, 2, 2);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+.image{
+  background-image: url("https://images.pexels.com/photos/1462630/pexels-photo-1462630.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-repeat: no-repeat;
+background-position:center;
+background-size:cover;
+width:100%;
+height:20%;
+
+}
+#mssvss{
+  background-image: url(https://images.pexels.com/photos/436784/pexels-photo-436784.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size:cover;
+  width:100%;
+  height:100%;
+
+}
+#box{
+  background-color:rgb(162, 214, 212);
+}
+#boxe{
+  background-color:rgb(233, 217, 198);
+}
+#boxes{
+  background-color:rgb(228, 209, 186);
+}
+#boxez{
+  background-color:rgb(168, 167, 164);
+}
+
